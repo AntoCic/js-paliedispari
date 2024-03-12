@@ -41,6 +41,7 @@ option_check.addEventListener("click", function () {
 
   const randomN = getRandomNum(5);
   console.log(randomN);
+
   if (isEven(randomN)) {
     if (choice === "pari") {
       info_pari_dispari.textContent = "hai indovinato";
@@ -62,6 +63,10 @@ function getRandomNum(max) {
 }
 function isEven(n) {
   if (n % 2 === 0) {
+    // ho voluto intenzionalmente ritornare true o false
+    // e non "pari" e "dispari"
+    // per poter riutilizzare questo codice dove voglio
+    // anche se ho complicato le cose dopo ;)
     return true;
   } else {
     return false;
