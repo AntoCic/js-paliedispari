@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1e62d76f8b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>title</title>
+</head>
+
+<body class="text-center">
+    <header>
+        <h1>Paliedispari</h1>
+    </header>
+
+    <main>
+        <section class="palidroma">
+            <div class="container">
+                <div class="row flex-column align-items-center">
+                    <div class="col-12">
+                        <hr>
+                        <h2>Palidroma</h2>
+                    </div>
+                    <div class="col-auto">
+                        <label for="word" class="form-label">Inserisci una parola</label>
+                        <input type="text" class="form-control" id="word">
+
+                        <button type="button" class="btn btn-primary mt-2" id="word_check">Controlla se la parola è
+                            palidroma</button>
+                        <p id="info_word"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pari-dispari">
+            <div class="container">
+                <div class="row flex-column align-items-center">
+                    <div class="col-12">
+                        <hr>
+                        <h2>Pari e Dispari</h2>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="option" id="radio_pari" value="pari">
+                            <label class="form-check-label" for="radio_pari">Pari</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="option" id="radio_dispari"
+                                value="dispari">
+                            <label class="form-check-label" for="radio_dispari">Dispari</label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-primary mt-2" id="option_check">Controlla se hai indovinato
+                            palidroma</button>
+                        <p id="info_pari_dispari"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
